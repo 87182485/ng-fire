@@ -7,8 +7,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'firebase-first-action';
   collection = this.fireStore.collection('product');
+  opened = true;
 
   constructor(private fireStore: AngularFirestore) {
     console.log(fireStore);
